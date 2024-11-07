@@ -125,7 +125,7 @@ def calculate_vif():
     else:
         return "Encoded data not available."
 
-# Function 12: Recalculate VIF
+# Function 10: Recalculate VIF
 def recalculate_vif():
     global encoded_data
     if encoded_data is not None:
@@ -138,7 +138,7 @@ def recalculate_vif():
     else:
         return "Encoded data not available."
 
-# Function 13: Visualize Distribution
+# Function 11: Visualize Distribution
 def visualize_distribution():
     global data, encoded_data
     if data is not None and encoded_data is not None:
@@ -159,7 +159,7 @@ def visualize_distribution():
     else:
         return "Data not loaded."
 
-# Function 14: Initialize and Train Decision Tree
+# Function 12: Initialize and Train Decision Tree
 def initialize_decision_tree():
     global dt_model, X_resampled, y_resampled
     if X_resampled is not None and y_resampled is not None:
@@ -169,7 +169,7 @@ def initialize_decision_tree():
     else:
         return "SMOTE resampled data not available."
 
-# Function 15: K-Fold Cross-Validation for Decision Tree
+# Function 13: K-Fold Cross-Validation for Decision Tree
 def cross_validation_decision_tree():
     global dt_model, X_resampled, y_resampled
     if dt_model is not None and X_resampled is not None:
@@ -181,7 +181,7 @@ def cross_validation_decision_tree():
     else:
         return "Decision Tree or resampled data not available."
 
-# Function 16: Visualize Decision Tree Structure
+# Function 14: Visualize Decision Tree Structure
 def visualize_decision_tree():
     global dt_model, X_resampled
     if dt_model is not None and X_resampled is not None:
@@ -195,7 +195,7 @@ def visualize_decision_tree():
     else:
         return "Decision Tree model not trained."
 
-# Function 17: Confusion Matrix Visualization for Decision Tree
+# Function 15: Confusion Matrix Visualization for Decision Tree
 def visualize_confusion_matrix_decision_tree():
     global dt_model, X_resampled, y_resampled
     if dt_model is not None and X_resampled is not None:
@@ -209,7 +209,7 @@ def visualize_confusion_matrix_decision_tree():
     else:
         return "Decision Tree or resampled data not available."
 
-# Function 18: Classification Report for Decision Tree
+# Function 16: Classification Report for Decision Tree
 def classification_report_dt():
     global dt_model, X_resampled, y_resampled
     if dt_model is not None and X_resampled is not None:
@@ -219,7 +219,7 @@ def classification_report_dt():
     else:
         return "Decision Tree or resampled data not available."
 
-# Function 19: Initialize and Train Logistic Regression
+# Function 17: Initialize and Train Logistic Regression
 def initialize_logistic_regression():
     global lr_model, X_resampled, y_resampled
     if X_resampled is not None and y_resampled is not None:
@@ -229,7 +229,7 @@ def initialize_logistic_regression():
     else:
         return "SMOTE resampled data not available."
 
-# Function 20: Logistic Regression Evaluation
+# Function 18: Logistic Regression Evaluation
 def evaluate_logistic_regression():
     global lr_model, X_resampled, y_resampled
     if lr_model is not None and X_resampled is not None:
@@ -240,7 +240,7 @@ def evaluate_logistic_regression():
     else:
         return "Logistic Regression model or resampled data not available."
 
-# Function 21: Initialize and Train Random Forest with Hyperparameter Tuning
+# Function 19: Initialize and Train Random Forest with Hyperparameter Tuning
 def initialize_random_forest():
     global rf_model, X_resampled, y_resampled, rf_results
     if X_resampled is not None and y_resampled is not None:
@@ -262,7 +262,7 @@ def initialize_random_forest():
     else:
         return "SMOTE resampled data not available."
 
-# Function 22: Random Forest Evaluation
+# Function 20: Random Forest Evaluation
 def evaluate_random_forest():
     global rf_model, X_resampled, y_resampled
     if rf_model is not None and X_resampled is not None:
